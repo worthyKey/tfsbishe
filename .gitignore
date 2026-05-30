@@ -22,8 +22,14 @@ env/
 models/
 *.pth
 
-# Raw sensor data (2.4GB - keep locally)
+# Raw sensor data (2.4GB - keep locally, download from Releases)
 shuju/
+
+# Release zip packages (local temp)
+*.zip
+
+# Release creation script (contains token)
+create_release.py
 
 # Jupyter
 .ipynb_checkpoints/

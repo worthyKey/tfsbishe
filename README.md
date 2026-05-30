@@ -45,15 +45,17 @@
 pip install -r requirements.txt
 ```
 
-## 数据准备
+## 数据与模型下载
 
-由于数据量较大（2.4GB），原始传感器数据未包含在 Git 仓库中。运行前需将 `shuju/` 目录放置到项目根目录：
+原始传感器数据和预训练模型未包含在 Git 仓库中，需从 [GitHub Releases](https://github.com/worthyKey/tfsbishe/releases) 下载：
 
-```
-shuju/
-├── FB/    # FB 数据文件（.csv）
-└── TP/    # TP 数据文件（.csv）
-```
+| 文件 | 大小 | 说明 |
+|------|------|------|
+| [shuju_FB.zip](https://github.com/worthyKey/tfsbishe/releases/download/v1.0/shuju_FB.zip) | 61 MB | FB 传感器数据 (71 CSV) |
+| [shuju_TP.zip](https://github.com/worthyKey/tfsbishe/releases/download/v1.0/shuju_TP.zip) | 123 MB | TP 传感器数据 (71 CSV) |
+| [models.zip](https://github.com/worthyKey/tfsbishe/releases/download/v1.0/models.zip) | 105 MB | 预训练 LSTM + DDPG 模型 |
+
+下载后将 3 个 zip 解压到项目根目录，目录结构会自动对应 `shuju/` 和 `models/`。
 
 ## 运行
 
