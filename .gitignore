@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Model checkpoints (too large)
+models/
+*.pth
+
+# Raw sensor data (2.4GB - keep locally)
+shuju/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Output/docx files (generated)
+baogao/*.docx
+
+# Temporary fix scripts
+baogao/fix_*.py
+redo_*.py
+
+# Claude conversation transcripts
+*.jsonl
+.claude/
+
+# PDF
+*.pdf
